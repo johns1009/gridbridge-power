@@ -24,10 +24,17 @@ Nothing else on the site is a placeholder. There are no invented stats, MW
 figures, customer names, site counts, years in business, or testimonials. Add
 real ones only when they can be backed up.
 
+## Page sections
+
+Hero, Behind the meter, We own the substation, How it works, Who we serve,
+**Landowners & site originators** (`#landowners`), Why GridBridge, Contact.
+
 ## How the contact form works
 
 There is no server. When a visitor clicks **Send message**, the form opens their
-own email app with a pre-filled message addressed to `CONTACT_EMAIL`. If you
+own email app with a pre-filled message addressed to `CONTACT_EMAIL`. The optional
+"I am a" menu (Data center developer / Landowner / Site originator / Other) is
+included in the message and the subject line. If you
 later want submissions to arrive without the visitor's email app (e.g. Formspree,
 HubSpot, a Google Form), swap the submit handler in `script.js`.
 

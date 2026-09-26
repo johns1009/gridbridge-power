@@ -10,7 +10,7 @@ const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
 const css = fs.readFileSync(path.join(root, "styles.css"), "utf8");
 const js = fs.readFileSync(path.join(root, "script.js"), "utf8");
 
-for (const id of ["main", "top", "behind-the-meter", "substation", "how-it-works", "who-we-serve", "why-gridbridge", "contact", "contact-form", "nav-menu", "year"]) {
+for (const id of ["main", "top", "behind-the-meter", "substation", "how-it-works", "who-we-serve", "landowners", "why-gridbridge", "role", "contact", "contact-form", "nav-menu", "year"]) {
   if (!html.includes('id="' + id + '"')) errors.push("Missing id: " + id);
 }
 for (const t of ["<header", "<main", "<footer", "<nav", 'lang="en"', "Skip to content"]) {

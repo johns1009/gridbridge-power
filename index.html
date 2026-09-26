@@ -32,10 +32,11 @@
         </button>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="#behind-the-meter">Behind the meter</a></li>
-          <li><a href="#substation">Our substation</a></li>
+          <li><a href="#substation">Substation</a></li>
           <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#who-we-serve">Who we serve</a></li>
-          <li><a href="#why-gridbridge">Why GridBridge</a></li>
+          <li><a href="#landowners">Landowners</a></li>
+          <li><a href="#why-gridbridge">Why us</a></li>
           <li><a class="nav-cta" href="#contact">Talk to us</a></li>
         </ul>
       </nav>
@@ -328,14 +329,102 @@
       </div>
     </section>
 
+    <!-- LANDOWNERS & SITE ORIGINATORS -->
+    <section class="section" id="landowners" aria-labelledby="land-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">For landowners &amp; site originators</p>
+          <h2 id="land-title">Turn your site into powered land.</h2>
+          <p class="section-lead">
+            Data center and AI campus developers aren&rsquo;t just looking for land. They&rsquo;re looking for land that
+            can get power. A site paired with a committed behind-the-meter power solution and a GridBridge-owned
+            substation can be more valuable and easier to market than raw land waiting on a utility interconnection.
+          </p>
+        </div>
+
+        <div class="land-grid">
+          <div class="land-value">
+            <div class="land-compare">
+              <div class="land-card land-card--muted reveal">
+                <p class="land-card-label">Raw land</p>
+                <ul>
+                  <li>Power depends on a utility interconnection and its timeline.</li>
+                  <li>Buyers have to solve the power question themselves.</li>
+                  <li>Harder to position for large-load users.</li>
+                </ul>
+              </div>
+              <div class="land-card land-card--brand reveal">
+                <p class="land-card-label">Powered land with GridBridge</p>
+                <ul>
+                  <li>A committed behind-the-meter power plan for the site.</li>
+                  <li>A GridBridge-owned substation, planned with the site.</li>
+                  <li>A clearer story for data center and AI campus buyers.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="capital-callout reveal">
+              <h3>Capital to build it</h3>
+              <p>
+                Backed by strong capital partners, GridBridge can fund and build the generation and substation for a
+                qualifying site, helping it become powered land. We then own and operate that power infrastructure
+                for the long term.
+              </p>
+            </div>
+
+            <p class="land-structures">
+              <strong>Partnership structures can be tailored.</strong> Depending on the site and your goals, options may
+              include a land lease, a joint development arrangement, or another structure that fits. Not every site will
+              be a fit, and we&rsquo;ll tell you what we find.
+            </p>
+          </div>
+
+          <div class="land-steps-wrap">
+            <h3 class="land-steps-title">How partnering works</h3>
+            <ol class="land-steps">
+              <li class="reveal">
+                <span class="step-num" aria-hidden="true">1</span>
+                <h4>Bring us your site</h4>
+                <p>Share the location and what you know about the land.</p>
+              </li>
+              <li class="reveal">
+                <span class="step-num" aria-hidden="true">2</span>
+                <h4>We evaluate its power potential</h4>
+                <p>We look at whether and how behind-the-meter generation and a substation could serve large loads there.</p>
+              </li>
+              <li class="reveal">
+                <span class="step-num" aria-hidden="true">3</span>
+                <h4>We plan generation and the substation</h4>
+                <p>We develop a power plan sized for the kinds of users the site could attract.</p>
+              </li>
+              <li class="reveal">
+                <span class="step-num" aria-hidden="true">4</span>
+                <h4>We own and operate the power infrastructure</h4>
+                <p>GridBridge, with support from our capital partners, can fund, build, own, and operate it.</p>
+              </li>
+              <li class="reveal">
+                <span class="step-num" aria-hidden="true">5</span>
+                <h4>You gain a more marketable site</h4>
+                <p>Powered land can be more attractive to data center and AI campus developers, which can help increase what the site is worth to them.</p>
+              </li>
+            </ol>
+            <div class="land-cta">
+              <a class="btn btn-primary" href="#contact">Have a site? Talk to us</a>
+              <p>In the contact form, choose &ldquo;Landowner&rdquo; or &ldquo;Site originator.&rdquo;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- WHY GRIDBRIDGE -->
-    <section class="section" id="why-gridbridge" aria-labelledby="why-title">
+    <section class="section section--tint" id="why-gridbridge" aria-labelledby="why-title">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Our approach</p>
           <h2 id="why-title">Why GridBridge.</h2>
         </div>
-        <div class="card-grid card-grid--4">
+        <div class="card-grid card-grid--why">
           <article class="card card--why reveal">
             <h3>Speed to power</h3>
             <p>Dedicated, behind-the-meter supply lets your project move on its own timeline rather than waiting on the grid.</p>
@@ -351,6 +440,10 @@
           <article class="card card--why reveal">
             <h3>Flexible generation mix</h3>
             <p>Each site is different. Generation options can be combined, and paired with a utility connection where that makes sense, to fit the location and your goals.</p>
+          </article>
+          <article class="card card--why reveal">
+            <h3>Backed by strong capital partners</h3>
+            <p>GridBridge works with strong capital partners, which helps us fund and build the generation and substation infrastructure our projects need.</p>
           </article>
         </div>
       </div>
@@ -397,13 +490,25 @@
               <input id="phone" name="phone" type="tel" autocomplete="tel" />
             </div>
           </div>
-          <div class="field">
-            <label for="location">Project location</label>
-            <input id="location" name="location" type="text" placeholder="City, state, or region" />
+          <div class="form-row">
+            <div class="field">
+              <label for="role">I am a</label>
+              <select id="role" name="role">
+                <option value="">Select one (optional)</option>
+                <option>Data center developer</option>
+                <option>Landowner</option>
+                <option>Site originator</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="location">Project or site location</label>
+              <input id="location" name="location" type="text" placeholder="City, state, or region" />
+            </div>
           </div>
           <div class="field">
             <label for="message">How can we help? <span aria-hidden="true">*</span></label>
-            <textarea id="message" name="message" rows="5" required placeholder="Load size, timing, and anything else we should know"></textarea>
+            <textarea id="message" name="message" rows="5" required placeholder="Load size, timing, site details, and anything else we should know"></textarea>
           </div>
           <p class="form-note">* Required. Submitting opens your email app with a pre-filled message.</p>
           <button class="btn btn-primary btn-block" type="submit">Send message</button>
@@ -428,6 +533,7 @@
           <li><a href="#substation">Our substation</a></li>
           <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#who-we-serve">Who we serve</a></li>
+          <li><a href="#landowners">Landowners</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>

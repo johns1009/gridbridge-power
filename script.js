@@ -25,7 +25,7 @@ var CONTACT_EMAIL = "info@example.com"; // PLACEHOLDER: not a real address
   var nav = document.querySelector(".nav");
   var toggle = document.querySelector(".nav-toggle");
   var menu = document.getElementById("nav-menu");
-  var mobileQuery = window.matchMedia("(max-width: 960px)");
+  var mobileQuery = window.matchMedia("(max-width: 1180px)");
 
   function setMenu(open) {
     if (!nav || !toggle || !menu) return;
@@ -61,7 +61,7 @@ var CONTACT_EMAIL = "info@example.com"; // PLACEHOLDER: not a real address
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var status = document.getElementById("form-status");
-      var fields = ["name", "company", "email", "phone", "location", "message"];
+      var fields = ["name", "company", "email", "phone", "role", "location", "message"];
       var v = {};
       fields.forEach(function (id) {
         var el = document.getElementById(id);
@@ -88,14 +88,15 @@ var CONTACT_EMAIL = "info@example.com"; // PLACEHOLDER: not a real address
         "Company: " + (v.company || "Not provided"),
         "Email: " + v.email,
         "Phone: " + (v.phone || "Not provided"),
-        "Project location: " + (v.location || "Not provided"),
+        "I am a: " + (v.role || "Not provided"),
+        "Project or site location: " + (v.location || "Not provided"),
         "",
         v.message
       ].join("\n");
 
       status.textContent = "Opening your email app with a pre-filled message to " + CONTACT_EMAIL + ".";
       window.location.href = "mailto:" + CONTACT_EMAIL +
-        "?subject=" + encodeURIComponent("GridBridge Power inquiry" + (v.company ? " from " + v.company : "")) +
+        "?subject=" + encodeURIComponent("GridBridge Power inquiry" + (v.role ? " (" + v.role + ")" : "") + (v.company ? " from " + v.company : "")) +
         "&body=" + encodeURIComponent(body);
     });
   }
