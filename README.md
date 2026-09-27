@@ -6,7 +6,7 @@ GridBridge-owned substation.
 
 Plain HTML/CSS/JS. No framework, no build step.
 
-- Preview: https://johns1009.github.io/gridbridge-power/
+- Live: https://www.gridbridgepower.com (preview: https://johns1009.github.io/gridbridge-power/)
 - Repo: https://github.com/johns1009/gridbridge-power
 
 ## ⚠️ Placeholders John needs to fill in
